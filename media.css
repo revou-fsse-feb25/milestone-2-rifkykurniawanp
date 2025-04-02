@@ -1,0 +1,62 @@
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    /* body #header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: smaller;
+
+    }
+
+    body #container{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
+
+    .container-1 img{
+        height: 10px;
+
+    }
+    .container2{
+        display:none;
+    } */
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    } 
+
+    .logo {
+        margin: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-right: 2em;
+
+    }   
+
+    #games {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        font-size: smaller;
+    }
+    
+    .game-section {
+        width: 80%;
+    }
+
+
+    /* GAME MEMORY CARD */
+
+    .memory-game{
+            grid-template-rows: repeat(8, auto);
+            grid-template-columns: repeat(2, auto);
+        }
+
+}

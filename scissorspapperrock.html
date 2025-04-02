@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revou Milestones 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    
+
+    <!-- Header -->
+    <header >
+        <div class="logo">RevoFun</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href= #games>Games</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="hero">
+            <h1>Welcome to RevoFun</h1>
+            <p>Your Ultimate Gaming Experience</p>
+            <a href="#games" class="btn">Explore Games</a>
+        </section>
+
+        <section id="game-1">
+            <h2>Rock Paper Scissors</h2>
+        
+            <div class="choises">
+                <button onclick="playGame('rock')">✊ Rock</button>
+                <button onclick="playGame('paper')">✋ Paper</button>
+                <button onclick="playGame('scissors')">✌️ Scissors</button>
+            </div>
+            <br>
+            <div id="result"></div>
+            <br>
+            <div class="scores">
+                <div>Player: <span id="player-score">0</span></div>
+                <div>Computer: <span id="computer-score">0</span></div>
+            </div>
+        </section>
+
+
+        <!-- Blog Section -->
+        <section class="blog" id="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Game Update 1</h3>
+                <p>Details about the latest update...</p>
+            </article>
+            <article>
+                <h3>Upcoming Releases</h3>
+                <p>New games launching soon...</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <article class="form">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="required">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Question</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Games Problem</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question" class="required">Your Question</label>
+                        <textarea id="question" name="question" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Submit Question</button>
+                </form>
+            </article>
+        </section>
+        
+    </main>
+    
+    <!-- Social Media -->
+    
+    <footer>
+        <div class="social-media">
+           <a href="https://www.linkedin.com/in/rifkykurniawanputra/" target="_blank"> <img src="assets/linkedin.png" alt="https://www.linkedin.com/in/rifkykurniawanputra"></a> 
+           <a href="https://instagram.com/rifkykurniawanp" target="_blank"> <img src="assets/instagram.png" alt="https://instagram.com/rifkykurniawanp"></a> 
+           <a href="https://github.com/rifkykurniawanp" target="_blank"> <img src="assets/github.png" alt="https://github.com/rifkykurniawanp"></a> 
+           <a href="mailto:krifky14@gmail.com" target="_blank"> <img src="assets/email.png" alt="mailto:krifky14@gmail.com"></a> 
+           <a href="https://wa.me/6282133070087" target="_blank"> <img src="assets/whatsapp.png" alt="https://wa.me/6282133070087"></a> 
+       </div>
+        <p>&copy; 2025 RevouFun. A Game Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scissorspapperrock.js"></script>
+</body>
+
+</html>

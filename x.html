@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .choices {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            min-height: 30px;
+        }
+        .scores {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    
+    <div class="choices">
+        <button onclick="playGame('rock')">✊ Rock</button>
+        <button onclick="playGame('paper')">✋ Paper</button>
+        <button onclick="playGame('scissors')">✌️ Scissors</button>
+    </div>
+    
+    <div id="result"></div>
+    
+    <div class="scores">
+        <div>Player: <span id="player-score">0</span></div>
+        <div>Computer: <span id="computer-score">0</span></div>
+    </div>
+    
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+        
+        function playGame(playerChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+            
+            let result = determineWinner(playerChoice, computerChoice);
+            
+            document.getElementById('result').textContent = 
+                `You chose ${playerChoice}, computer chose ${computerChoice}. ${result}`;
+            
+            document.getElementById('player-score').textContent = playerScore;
+            document.getElementById('computer-score').textContent = computerScore;
+        }
+        
+        function determineWinner(player, computer) {
+            if (player === computer) {
+                return "It's a tie!";
+            }
+            
+            switch (player) {
+                case 'rock':
+                    if (computer === 'scissors') {
+                        playerScore++;
+                        return "You win! Rock crushes scissors!";
+                    } else {
+                        computerScore++;
+                        return "Computer wins! Paper covers rock!";
+                    }
+                    break;
+                    
+                case 'paper':
+                    if (computer === 'rock') {
+                        playerScore++;
+                        return "You win! Paper covers rock!";
+                    } else {
+                        computerScore++;
+                        return "Computer wins! Scissors cut paper!";
+                    }
+                    break;
+                    
+                case 'scissors':
+                    if (computer === 'paper') {
+                        playerScore++;
+                        return "You win! Scissors cut paper!";
+                    } else {
+                        computerScore++;
+                        return "Computer wins! Rock crushes scissors!";
+                    }
+                    break;
+                    
+                default:
+                    return "Invalid choice!";
+            }
+        }
+    </script>
+</body>
+</html> -->
