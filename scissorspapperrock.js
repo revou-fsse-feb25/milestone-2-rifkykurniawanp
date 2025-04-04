@@ -1,8 +1,9 @@
 let playerScore = 0;
 let computerScore = 0;
-// let nama = prompt('siapa nama kamu ?')
-// let scoping = document.getElementsByClassName('result');
-// scoping.getElementsByquerySelectorAll(div)[0].innerText = nama;
+let nama = prompt('siapa nama kamu ?')
+
+const namaPlayer = document.getElementById('nama-player');
+namaPlayer.textContent = nama;
 
 
 function determineWinner(player, computer) {

@@ -41,7 +41,6 @@
     }   
 
     #games {
-        display: flex;
         flex-direction: column;
         padding: 1rem;
         font-size: smaller;
@@ -54,9 +53,9 @@
 
     /* GAME MEMORY CARD */
 
-    .memory-game{
-            grid-template-rows: repeat(8, auto);
-            grid-template-columns: repeat(2, auto);
+    .memory-game{    
+        grid-template-rows: repeat(8, auto);
+        grid-template-columns: repeat(2, auto);
         }
 
 }
