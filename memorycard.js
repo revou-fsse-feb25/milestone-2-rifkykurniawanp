@@ -21,6 +21,7 @@ function flipCard() {
   checkForMatch();
 }
 
+// fungsi untuk cek jika 2 kartu cocok
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
@@ -45,6 +46,7 @@ function unflipCards() {
   }, 1500);
 }
 
+// fungsi untuk reset jika 2 kartu tidak cocok
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
