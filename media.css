@@ -58,4 +58,10 @@
         grid-template-columns: repeat(2, auto);
         }
 
+    /* Guess the Number */
+
+    #guessTheNumber {}
+
+    /* Scissors Paper Rock */
+
 }

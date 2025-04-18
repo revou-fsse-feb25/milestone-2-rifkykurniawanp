@@ -52,6 +52,7 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+// fungsi mengacak posisi kartu
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);

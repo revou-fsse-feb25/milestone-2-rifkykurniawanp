@@ -35,7 +35,7 @@
                guessInput.disabled = true;
            } else if (userGuess < targetNumber) {
                message.textContent = 'Too low! Try a higher number.';
-               message.style.color = 'blue';
+               message.style.color = 'red';
            } else {
                message.textContent = 'Too high! Try a lower number.';
                message.style.color = 'blue';
