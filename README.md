@@ -9,7 +9,7 @@ Welcome to **REVOFUN**, the perfect place for quick, fun, and challenging games!
 
 ## Available Games
 
-### 1. [Scissors Paper Rock](https://revou-fsse-feb25.github.io/milestone-2-rifkykurniawanp/scissorspapperrock.html)
+### 1. [Scissors Paper Rock](https://revou-fsse-feb25.github.io/milestone-2-rifkykurniawanp/html/scissorspapperrock.html)
 The classic hand game with a digital twist! Choose between scissors, paper, or rock and challenge yourself against the AI or your friends in a fun and fast-paced battle.
 
 **How to Play**:
@@ -20,7 +20,7 @@ The classic hand game with a digital twist! Choose between scissors, paper, or r
 
 ---
 
-### 2. [Memory Card](https://revou-fsse-feb25.github.io/milestone-2-rifkykurniawanp/memorycard.html)
+### 2. [Memory Card](https://revou-fsse-feb25.github.io/milestone-2-rifkykurniawanp/html/memorycard.html)
 Test your memory and concentration with **Memory Card**. Flip the cards and match pairs before time runs out. The faster and more accurate you are, the higher your score!
 
 **How to Play**:
@@ -30,7 +30,7 @@ Test your memory and concentration with **Memory Card**. Flip the cards and matc
 
 ---
 
-### 3. [Guess the Number](https://revou-fsse-feb25.github.io/milestone-2-rifkykurniawanp/guessthenumber.html)
+### 3. [Guess the Number](https://revou-fsse-feb25.github.io/milestone-2-rifkykurniawanp/html/guessthenumber.html)
 Put your guessing skills to the test with **Guess the Number**. Guess a random number in the fewest attempts possible, and use the clues provided after each guess to guide you to the correct answer.
 
 **How to Play**:
