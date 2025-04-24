@@ -28,6 +28,12 @@
            
            attempts++;
            attemptsDisplay.textContent = `Attempts: ${attempts}`;
+           if (attempts > 8) {
+               message.textContent = 'You have reached the maximum number of attempts. Game over!';
+               message.style.color = 'red';
+               guessInput.disabled = true;
+               return;
+           }
            
            if (userGuess === targetNumber) {
                message.textContent = `Congratulations! You guessed the number in ${attempts} attempts!`;

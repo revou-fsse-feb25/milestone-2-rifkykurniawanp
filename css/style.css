@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #111;
-    background-image: url('assets/backgroundBody2.jpg');
+    background-image: url('../assets/backgroundBody2.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #efe9e9;
@@ -82,16 +82,16 @@ main{
 }
 
 #scissorsPapperRock {
-    background-image: url('assets/rockPaperScissors.avif');  
+    background-image: url('../assets/rockPaperScissors.avif');  
 }
 
 #guessTheNumber {
-    background-image: url('assets/guessANumber.jpg');
+    background-image: url('../assets/guessANumber.jpg');
     color: aliceblue;
 }
 
 #memoryCardGame {
-    background-image: url('assets/memoryCard2.avif');
+    background-image: url('../assets/memoryCard2.avif');
 }
 
 /* form */
@@ -172,7 +172,7 @@ footer {
 #game-1 {
     color: #111;
     text-shadow: #333 1px 1px 1px;
-    background-image: url('assets/rockPaperScissors.avif');
+    background-image: url('../assets/rockPaperScissors.avif');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -273,7 +273,7 @@ footer {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-image: url(assets/guessANumber.jpg);
+    background-image: url(../assets/guessANumber.jpg);
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);

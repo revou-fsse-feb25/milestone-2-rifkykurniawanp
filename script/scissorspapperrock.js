@@ -2,6 +2,12 @@ let playerScore = 0;
 let computerScore = 0;
 let nama = prompt('siapa nama kamu ?')
 
+if (nama === null || nama === '') {
+    alert('Nama tidak boleh kosong');
+    window.location.reload();}
+
+    
+
 const namaPlayer = document.getElementById('nama-player');
 namaPlayer.textContent = nama;
 
@@ -47,6 +53,12 @@ function determineWinner(player, computer) {
     }
 }
 
+
+// kok gak bisa ya ?
+localStorage.setItem('playerScore', playerScore);
+localStorage.setItem('computerScore', computerScore);
+
+
 function playGame(playerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -58,4 +70,12 @@ function playGame(playerChoice) {
     
     document.getElementById('player-score').textContent = playerScore;
     document.getElementById('computer-score').textContent = computerScore;
+
+    if (playerScore === 5) {
+        alert('You win the game!');
+        window.location.reload();
+    } else if (computerScore === 5) {
+        alert('Computer wins the game!');
+        window.location.reload();
+    }
 }

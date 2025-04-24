@@ -1,8 +1,22 @@
 const cards = document.querySelectorAll('.memory-card');
+const memoryTimer = document.getElementById("memoryTimer");
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let gameScore = 0;
+let timeLeft = 30;
+
+const timerInterval = setInterval(() => {
+    timeLeft--;
+    memoryTimer.textContent = `Time: ${timeLeft}s`;
+
+    if (timeLeft === 0) {
+        alert('Waktu Anda Habis');
+        window.location.reload();
+      }   
+    }, 1000)
+
 
 function flipCard() {
   if (lockBoard) return;
@@ -31,7 +45,11 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
+  gameScore++;
+  if (gameScore === 8) {
+    alert('Selamat kamu menang');
+    window.location.reload();
+  }
   resetBoard();
 }
 
@@ -43,7 +61,7 @@ function unflipCards() {
     secondCard.classList.remove('flip');
 
     resetBoard();
-  }, 1500);
+  }, 1000);
 }
 
 // fungsi untuk reset jika 2 kartu tidak cocok

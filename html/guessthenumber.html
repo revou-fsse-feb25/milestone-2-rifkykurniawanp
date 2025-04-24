@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revou Milestones 2</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="hover.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 
 <body>
-    
 
     <!-- Header -->
     <header >
         <div class="logo">RevoFun</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href= #games>Games</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#">Forums</a></li>
@@ -43,23 +42,24 @@
             </p>
         </section>
 
-        <section id="game-1">
-            <h2>Rock Paper Scissors</h2>
+        <section id="game-3">
+            <h2>Guess The Number</h2>
         
-            <div class="choises">
-                <button onclick="playGame('rock')">✊ Rock</button>
-                <button onclick="playGame('paper')">✋ Paper</button>
-                <button onclick="playGame('scissors')">✌️ Scissors</button>
+            <div class="game-container">
+                <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+                
+                <div id="message"></div>
+                <div id="attempts">Attempts: 0</div>
+                <hr>
+                
+                <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess">
+                <br>
+                <br>
+                <button onclick="checkGuess()">Submit Guess</button>
+                <button onclick="resetGame()">New Game</button>
             </div>
-            <br>
-            <div id="result"></div>
-            <br>
-            <div class="scores">
-                <div> <span id="nama-player"></span> : <span id="player-score">0</span></div>
-                <div>Computer: <span id="computer-score">0</span></div>
-            </div>
-        </section>
 
+        </section>
 
         <!-- Blog Section -->
         <section class="blog" id="news">
@@ -115,16 +115,16 @@
     
     <footer>
         <div class="social-media">
-           <a href="https://www.linkedin.com/in/rifkykurniawanputra/" target="_blank"> <img src="assets/linkedin.png" alt="https://www.linkedin.com/in/rifkykurniawanputra"></a> 
-           <a href="https://instagram.com/rifkykurniawanp" target="_blank"> <img src="assets/instagram.png" alt="https://instagram.com/rifkykurniawanp"></a> 
-           <a href="https://github.com/rifkykurniawanp" target="_blank"> <img src="assets/github.png" alt="https://github.com/rifkykurniawanp"></a> 
-           <a href="mailto:krifky14@gmail.com" target="_blank"> <img src="assets/email.png" alt="mailto:krifky14@gmail.com"></a> 
-           <a href="https://wa.me/6282133070087" target="_blank"> <img src="assets/whatsapp.png" alt="https://wa.me/6282133070087"></a> 
+           <a href="https://www.linkedin.com/in/rifkykurniawanputra/" target="_blank"> <img src="../assets/linkedin.png" alt="https://www.linkedin.com/in/rifkykurniawanputra"></a> 
+           <a href="https://instagram.com/rifkykurniawanp" target="_blank"> <img src="../assets/instagram.png" alt="https://instagram.com/rifkykurniawanp"></a> 
+           <a href="https://github.com/rifkykurniawanp" target="_blank"> <img src="../assets/github.png" alt="https://github.com/rifkykurniawanp"></a> 
+           <a href="mailto:krifky14@gmail.com" target="_blank"> <img src="../assets/email.png" alt="mailto:krifky14@gmail.com"></a> 
+           <a href="https://wa.me/6282133070087" target="_blank"> <img src="../assets/whatsapp.png" alt="https://wa.me/6282133070087"></a> 
        </div>
         <p>&copy; 2025 RevouFun. A Game Website. All Rights Reserved.</p>
     </footer>
-
-    <script src="scissorspapperrock.js"></script>
+    
+    <script src="../script/guessthenumber.js"></script>
 </body>
 
 </html>
